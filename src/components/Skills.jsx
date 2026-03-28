@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const skillCategories = [
   { title: 'Programming', icon: Terminal, skills: ['Java', 'Python', 'JavaScript', 'C', 'C++'] },
-  { title: 'Frontend', icon: Layout, skills: ['React.js', 'Next.js', 'Tailwind', 'GSAP', 'Three.js'] },
-  { title: 'Backend & DB', icon: Server, skills: ['Node.js', 'Express', 'PostgreSQL', 'Firebase', 'MongoDB'] },
+  { title: 'Frontend', icon: Layout, skills: ['React.js', 'Next.js', 'Tailwind', 'GSAP', 'HTML5', 'CSS3'] },
+  { title: 'Backend & DB', icon: Server, skills: ['Node.js', 'PostgreSQL', 'Firebase', 'MongoDB'] },
   { title: 'Systems & Tools', icon: Wrench, skills: ['Git', 'Docker', 'Linux', 'Vercel', 'Figma'] },
   { title: 'Architecture', icon: Database, skills: ['Microservices', 'REST APIs', 'System Design'] },
   { title: 'Mobile Dev', icon: Smartphone, skills: ['React Native', 'Flutter', 'Swift', 'Kotlin'] }
