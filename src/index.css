@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #050505;
+  --surface-color: #111111;
+  --text-main: #ededed;
+  --text-muted: #888888;
+  --accent-color: #8b5cf6; /* Neon purple for dark mode */
+  --border-light: rgba(255, 255, 255, 0.05);
+  --border-medium: rgba(255, 255, 255, 0.15);
+  --overlay: rgba(255, 255, 255, 0.03);
+  --overlay-hover: rgba(255, 255, 255, 0.08);
+  --glow-rgb: 255, 255, 255;
+  --cursor-color: #ffffff;
+}
+
+.light-mode {
+  --bg-color: #f7f7f7;
+  --surface-color: #ffffff;
+  --text-main: #111111;
+  --text-muted: #666666;
+  --accent-color: #3b82f6; /* Crisp blue for light mode */
+  --border-light: rgba(0, 0, 0, 0.05);
+  --border-medium: rgba(0, 0, 0, 0.15);
+  --overlay: rgba(0, 0, 0, 0.02);
+  --overlay-hover: rgba(0, 0, 0, 0.06);
+  --glow-rgb: 0, 0, 0;
+  --cursor-color: #000000;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  transition: background-color 0.5s ease-out, color 0.5s ease-out;
+}
+
+/* Base custom scrollbar */
+* {
+    cursor: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--text-muted);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-main);
+}
+
+::selection {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+@layer components {
+  .minimal-card {
+    @apply bg-surface border border-borderLight rounded-2xl relative overflow-hidden transition-all duration-500 ease-out;
+  }
+
+  .minimal-card:hover {
+    @apply border-borderMedium bg-overlayHover;
+  }
+}
