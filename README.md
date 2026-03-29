@@ -19,10 +19,6 @@ Welcome to my personal portfolio! This project is a highly interactive, modern, 
 
 ---
 
-## 🔗 Live Demo
-✨ **Check it out here:** [Live Website Link](https://pranav-sinha.netlify.app) *(Update this link once deployed)*
-
----
 
 ## ✨ Features
 - 🌑 **Dark/Light Mode:** Seamless theme switching with a custom circular clip-path GSAP animation.
